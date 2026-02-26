@@ -12,11 +12,7 @@ const NewsSections = () => {
     useEffect(() => {
         async function getNews() {
             try {
-                const response = await fetch(`${process.env.REACT_APP_BITRIX_API_URL}?action=news`, {
-                    headers: {
-                      'ngrok-skip-browser-warning': 'true'
-                    }
-                  });
+                const response = await fetch(`${process.env.REACT_APP_BITRIX_API_URL}?action=news`)
                 const data = await response.json();
                 setNewsData(data);
             } catch(err) {

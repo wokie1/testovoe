@@ -29,7 +29,7 @@ const MobileModelsSlider = ({ data }) => {
                     <SwiperSlide key={index}>
                         <div className="mobile-model-image-container">
                             <img 
-                                src={model.imgUrl} 
+                                src={`/images${model.imgUrl}`}
                                 alt={model.title}
                                 className="mobile-model-image"
                             />

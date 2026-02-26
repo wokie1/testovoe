@@ -17,7 +17,11 @@ const ModelsSection = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`${process.env.REACT_APP_BITRIX_API_URL}?action=cars`);
+                const response = await fetch(`${process.env.REACT_APP_BITRIX_API_URL}?action=cars`, {
+                    headers: {
+                      'ngrok-skip-browser-warning': 'true'
+                    }
+                  });
                 const result = await response.json(); 
                 setData(result); 
                 if (result.length > 0) {

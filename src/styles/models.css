@@ -1,0 +1,119 @@
+
+.models-container {
+    background-image: url('../img/bg.png');
+    background-size:cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 46%;
+}
+
+.zagl {
+    font-size: 36px;
+    line-height: 27px;
+    margin-top: 5vh;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Jost", sans-serif;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+}
+
+.titles-container {
+    margin-top: 5vh;
+}
+
+.titles {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
+.titles button {
+    margin-right: 3vw;
+    font-size: 38px;
+    line-height: 60px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 7vh;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Jost", sans-serif;
+    text-align: right; 
+    background: transparent;
+    border: none;
+}
+
+.titles button.active-model { 
+    font-weight: 500;
+    transform: translateX(-10px);
+}
+
+@media (max-width: 1500px) and (min-width: 769px) {
+    .zagl {
+        font-size: 24px !important;
+        white-space: normal !important;
+        line-height: 1.3 !important;
+        text-align: right !important;
+    }
+    
+    .titles button {
+        font-size: 28px !important;
+        line-height: 45px !important;
+        margin-bottom: 5vh !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .models-container {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 30vh;
+        padding: 20px !important;
+    }
+    
+    .zagl-container {
+        justify-content: center !important;
+        padding: 10px !important;
+    }
+    
+    .zagl {
+        font-size: 20px !important;
+        margin: 0 !important;
+        text-align: center;
+        white-space: normal;
+    }
+    
+    .titles-container {
+        justify-content: center !important;
+        margin-top: 20px !important;
+        padding: 0 !important;
+    }
+    
+    .titles {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        max-width: 100%;
+    }
+    
+    .titles button {
+        font-size: 16px !important;
+        line-height: normal !important;
+        margin: 0 !important;
+        padding: 5px 10px;
+        white-space: normal;
+        text-align: center;
+    }
+    
+    .titles button.active-model {
+        transform: none !important;
+        text-decoration: underline;
+    }
+}

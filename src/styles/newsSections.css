@@ -1,0 +1,41 @@
+.news-section {
+    overflow-y: auto;
+    padding-bottom: 50px;
+    background-image: url("../img/news.png");
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.news-title {
+    font-size: 34px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Jost", sans-serif;
+}
+
+.news-swiper {
+    padding-bottom: 60px !important;
+}
+
+.news-swiper .swiper-pagination {
+    bottom: 0 !important;
+    position: relative !important;
+    margin-top: 30px !important;
+}
+
+.news-swiper .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background: transparent !important;
+    border: 2px solid white !important;
+    opacity: 1 !important;
+    transition: all 0.3s ease !important;
+}
+
+.news-swiper .swiper-pagination-bullet-active {
+    background: white !important;
+    transform: scale(1.3) !important;
+}

@@ -1,0 +1,129 @@
+.news-card {
+    position: relative;
+    width: 100%;
+    max-width: 380px; 
+    background: transparent;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+}
+
+.news-image-container {
+    position: relative; 
+    width: 100%;
+    height: 450px; 
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.news-card-line {
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    top: auto; 
+    width: 1px;
+    height: calc(100% - 20px); 
+    background: linear-gradient(to bottom, #a4a4a4, #a4a4a4);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);   
+}
+
+.news-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.news-image:hover {
+    transform: scale(1.05);
+}
+
+.news-content {
+    padding: 0 5px;
+    margin-left: 15px;
+}
+
+.news-card-title {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #a4a4a4;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.news-date {
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-size: 13px; 
+    color: #a0a0a0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.news-description {
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-size: 16px; 
+    line-height: 1.5;
+    color: #a4a4a4;
+    text-transform: none;
+    height: auto;
+    min-height: 50px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .news-card {
+        max-width: 300px;
+    }
+    
+    .news-image-container {
+        height: 300px;
+    }
+    
+    .news-card-title {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .news-date {
+        text-align: center;
+        font-size: 13px;
+    }
+    
+    .news-description {
+        text-align: center;
+        font-size: 13px;
+    }
+    
+    .news-card-line {
+        display: none;
+    }
+    
+    .news-content {
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .news-card {
+        max-width: 280px;
+    }
+    
+    .news-image-container {
+        height: 250px;
+    }
+    
+    .news-card-title {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,29 @@
+.fonts {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    width: 85%;
+}
+
+.fontZagl {
+    font-size: 70px;
+    margin-bottom: 5%;
+}
+
+.parag {
+    font-size: 24px;
+}
+
+.btn {
+    width: 260px;
+    height: 46px;
+    border-radius: 23px;
+    background-color: #ffffff;
+    margin-top: 5%;
+ }
+
+@media (max-width: 768px) {
+    .fontZagl { font-size: 36px; margin-bottom: 8%; }
+    .parag { font-size: 16px; }
+}

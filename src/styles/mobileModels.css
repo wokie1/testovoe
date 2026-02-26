@@ -1,0 +1,123 @@
+.mobile-models-section {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-models-header {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.mobile-models-title {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.mobile-models-swiper {
+    flex: 1;
+    width: 100%;
+}
+
+.mobile-model-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.mobile-model-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+}
+
+.mobile-model-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.mobile-model-name {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+.mobile-models-swiper .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background: transparent !important;
+    border: 2px solid white !important;
+    opacity: 1 !important;
+    transition: all 0.3s ease !important;
+}
+
+.mobile-models-swiper .swiper-pagination {
+    border: #ffffff;
+    top: 450px;
+}
+.mobile-models-swiper .swiper-pagination-bullet-active {
+    background: white !important;
+    transform: scale(1.3) !important;
+}
+
+.mobile-button-container {
+    padding: 0 20px 20px;
+    text-align: center;
+}
+
+.mobile-details-btn {
+    width: 100%;
+    max-width: 200px; 
+    height: 36px; 
+    border-radius: 23px; 
+    background-color: white;
+    border: none;
+    color: black;
+    font-family: "Jost", sans-serif;
+    font-size: 14px; 
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.mobile-details-btn:hover{
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+.mobile-availability-link {
+    text-align: center;
+    padding: 20px;
+}
+
+.mobile-availability-link a {
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

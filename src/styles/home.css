@@ -1,0 +1,58 @@
+.textUP {
+    font-size: 32px;
+}
+
+.textDown {
+    font-size: 14px;
+}
+
+.fonts {
+    font-size: 24px;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin-top: 2%;
+}
+
+.text_two {
+    font-size: 36px;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+}
+
+.text_one {
+    font-size: 120px;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; 
+}
+
+.btn {
+    width: 260px;
+    height: 46px;
+    border-radius: 23px;
+    background-color: #ffffff;
+}
+
+.centres {
+    margin-left: 5rem;
+}
+
+.pos {
+    top: 35%;
+}
+
+@media (max-width: 768px) {
+    .textUP { font-size: 12px; }
+    .textDown { font-size: 12px; }
+    .fonts { font-size: 18px; margin-top: 5%; }
+    .text_two { font-size: 10px; }
+    .text_one { font-size: 60px; }
+    .pos { top: 40%; }
+    .centres { margin-left: 0; }
+}

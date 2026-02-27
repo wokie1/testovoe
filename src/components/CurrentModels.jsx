@@ -1,5 +1,5 @@
 import "../styles/currentModels.css";
-import getImgPath from "../getImgPath.js";
+import getImgPath from "../getImgPath";
 const CurrentModels = ({ imgUrl, title }) => {
     return (
         <div className="model-card">

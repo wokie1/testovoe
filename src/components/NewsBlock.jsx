@@ -1,5 +1,5 @@
 import "../styles/newsBlock.css";
-import getImgPath from "../getImgPath.js";
+import getImgPath from "../getImgPath";
 const NewsBlock = ({title, date, description, imgUrl}) => {
     return (
         <div className="news-card position-relative w-100"> 

@@ -55,4 +55,7 @@
     .text_one { font-size: 60px; }
     .pos { top: 40%; }
     .centres { margin-left: 0; }
+    .hero-image {
+        object-position: 70% center; 
+    }
 }

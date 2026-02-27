@@ -3,8 +3,8 @@ import home_img from "../img/home.png";
 import "../styles/home.css"
 const HomeSections = () => {
     return(
-        <div className="position-relative w-100">
-            <img src={home_img} alt="background" className='vh-100 w-100' />
+        <div className="position-relative w-100 overflow-hidden">
+            <img src={home_img} alt="background" className='hero-image' />
             <div className='position-absolute text-white top-0 w-100 fonts'>
                 <div className="d-flex justify-content-around align-items-center w-100">
                     <p className="mb-0">Меню</p>

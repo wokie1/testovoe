@@ -4,7 +4,7 @@ import { Pagination, A11y } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import "../styles/mobileModels.css";
-
+import getImgPath from "../getImgPath.js";
 const MobileModelsSlider = ({ data }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     
@@ -29,7 +29,7 @@ const MobileModelsSlider = ({ data }) => {
                     <SwiperSlide key={index}>
                         <div className="mobile-model-image-container">
                             <img 
-                                src={`/images${model.imgUrl}`}
+                                src={`/images${getImgPath(imgUrl)}`}
                                 alt={model.title}
                                 className="mobile-model-image"
                             />

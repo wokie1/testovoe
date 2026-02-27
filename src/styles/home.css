@@ -5,7 +5,13 @@
 .textDown {
     font-size: 14px;
 }
-
+.hero-image {
+    width: 100%;
+    height: auto; 
+    min-height: 100vh; 
+    object-fit: cover;
+    object-position: center;
+}
 .fonts {
     font-size: 24px;
     font-family: "Jost", sans-serif;
